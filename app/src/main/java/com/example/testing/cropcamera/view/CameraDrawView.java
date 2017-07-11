@@ -75,6 +75,7 @@ public class CameraDrawView extends RelativeLayout implements View.OnClickListen
                 mCameraLayerView.setLineWidth(lineWidth);
                 mCameraLayerView.setLineColor(typedArray.getDimensionPixelOffset(R.styleable.CameraDrawView_lineColor, 0x7c000000));
             }
+			typedArray.recycle();
         }
 
         DisplayMetrics displayMetrics = context.getApplicationContext().getResources().getDisplayMetrics();
